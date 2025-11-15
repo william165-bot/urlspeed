@@ -1,0 +1,30 @@
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji;line-height:1.5;color:#0f172a;background:#0b1220}
+:root{--brand:#33e6a6;--muted:#a3b0c2}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;border-bottom:1px solid #1f2a44;background:#0b1220;position:sticky;top:0;z-index:20}
+.logo{font-weight:800;font-size:20px;letter-spacing:0.5px;color:#fff}
+.tag{color:#0b1220;background:var(--brand);padding:2px 8px;border-radius:999px;font-size:12px;margin-left:8px}
+.nav a, .nav button{color:#cbd5e1;background:transparent;border:0;cursor:pointer;padding:8px 12px;border-radius:8px}
+.nav a:hover, .nav button:hover{color:#fff;background:#111827}
+.title{font-size:40px;font-weight:900;color:#fff;margin:24px 0}
+.subtitle{color:var(--muted);margin-top:-8px;margin-bottom:24px}
+.card{background:#0f172a;border:1px solid #1f2a44;border-radius:16px;padding:20px}
+.input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #334155;background:#0b1220;color:#e2e8f0}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:10px;border:1px solid #1f2a44;background:linear-gradient(90deg,#1b2a47,#13203a);color:#dbeafe;cursor:pointer}
+.btn:hover{border-color:#334155}
+.btn-primary{background:linear-gradient(90deg,var(--brand),#1dd49a);color:#062016;border-color:transparent}
+.grid{display:grid;gap:16px}
+@media(min-width:800px){.grid-2{grid-template-columns:1fr 1fr}}
+.embedWrap{height:calc(100vh - 70px);position:relative;overflow:hidden;border-radius:16px;border:1px solid #1f2a44}
+.embed{position:absolute;inset:0;width:100%;height:calc(100% + 80px);top:-80px;border:0}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:#0f172a;border:1px solid #1f2a44;color:#a3b0c2;font-size:12px}
+.list{width:100%;border-collapse:collapse}
+.list th,.list td{padding:10px;border-bottom:1px solid #1f2a44;color:#cbd5e1}
+.list th{text-align:left;color:#93c5fd}
+.footer{padding:32px;text-align:center;color:#64748b}
+.link{color:#8bdefc}
+.success{color:#22c55e}
+.warn{color:#f59e0b}
+.error{color:#ef4444}
